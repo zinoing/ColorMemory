@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "SaveNationalScore",
+    "RelativePath": "api/update_score/national",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scoreInfo",
+        "Type": "ColorMemory.DTO.ScoreDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "GetNationalScore",
+    "RelativePath": "api/update_score/national/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "SaveWeeklyScore",
+    "RelativePath": "api/update_score/weekly",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scoreInfo",
+        "Type": "ColorMemory.DTO.ScoreDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "GetWeeklyScore",
+    "RelativePath": "api/update_score/weekly/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
