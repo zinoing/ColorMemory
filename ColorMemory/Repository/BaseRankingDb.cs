@@ -32,7 +32,21 @@ namespace ColorMemory.Repository
         public async Task<long?> GetRankAsyncById(string userId)
         {
             var rank = await _database.SortedSetRankAsync(_key, userId, Order.Descending);
-            return rank.HasValue ? rank.Value + 1 : (long?)null; // 0-based 인덱스를 1-based로 변환
+            return rank.HasValue ? rank.Value + 1 : (long?)null;
+        }
+
+        public async Task<List<ScoreDTO>> GetTopTenRanksAsync()
+        {
+            var topScores = await _database.SortedSetRangeByRankWithScoresAsync(_key, 0, 9, Order.Descending);
+
+            List<ScoreDTO> scores = new List<ScoreDTO>();
+
+            foreach (var score in topScores)
+            {
+                scores.Add(new ScoreDTO(score.Element, (int)score.Score));
+            }
+
+            return scores;
         }
 
         public async Task<bool> DeleteScoreAsyncById(string userId)

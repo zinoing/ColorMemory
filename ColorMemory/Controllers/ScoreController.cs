@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ColorMemory.Controllers
 {
-    [Route("api/update_score")]
+    [Route("api/score")]
     [ApiController]
     public class ScoreController : ControllerBase
     {
@@ -20,7 +20,7 @@ namespace ColorMemory.Controllers
             _nationalRankingDb = nationalRankingDb;
         }
 
-        [HttpPost("weekly")]
+        [HttpPost("update_weekly")]
         public async Task<IActionResult> SaveWeeklyScore([FromBody] ScoreDTO scoreInfo)
         {
             try
@@ -35,7 +35,7 @@ namespace ColorMemory.Controllers
             }
         }
 
-        [HttpPost("national")]
+        [HttpPost("update_national")]
         public async Task<IActionResult> SaveNationalScore([FromBody] ScoreDTO scoreInfo)
         {
             try
@@ -50,18 +50,36 @@ namespace ColorMemory.Controllers
             }
         }
 
-        [HttpGet("weekly/{userId}")]
+        [HttpGet("get_weekly/{userId}")]
         public async Task<IActionResult> GetWeeklyScore(string userId)
         {
             var score = await _weeklyRankingDb.GetScoreAsyncById(userId);
             return Ok(score);
         }
 
-        [HttpGet("national/{userId}")]
+        [HttpGet("get_national/{userId}")]
         public async Task<IActionResult> GetNationalScore(string userId)
         {
             var score = await _nationalRankingDb.GetScoreAsyncById(userId);
             return Ok(score);
+        }
+
+        /// <summary>
+        /// Get top 10 scores from ranking data
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("get_weekly/top_ten")]
+        public async Task<IActionResult> GetTopTenWeeklyScores()
+        {
+            var scores = await _weeklyRankingDb.GetTopTenRanksAsync();
+            return Ok(scores);
+        }
+
+        [HttpGet("get_national/top_ten")]
+        public async Task<IActionResult> GetTopTenNationalScores()
+        {
+            var scores = await _weeklyRankingDb.GetTopTenRanksAsync();
+            return Ok(scores);
         }
     }
 }
