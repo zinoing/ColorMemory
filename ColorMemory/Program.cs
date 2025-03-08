@@ -4,7 +4,6 @@ using Scalar.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddScoped<WeeklyRankingDb>();
 builder.Services.AddScoped<NationalRankingDb>();

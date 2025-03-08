@@ -9,10 +9,13 @@ namespace ColorMemory.Repository
         protected readonly IDatabase _database;
         protected readonly string _key;
 
-        protected BaseRankingDb(ILogger<BaseRankingDb> logger, string key)
+        protected BaseRankingDb(ILogger<BaseRankingDb> logger, IConfiguration configuration, string key)
         {
             _logger = logger;
-            _database = ConnectionMultiplexer.Connect("localhost:6379").GetDatabase();
+            var redisHost = configuration["Redis:Host"];
+            var redisPort = configuration["Redis:Port"];
+            var connectionString = $"{redisHost}:{redisPort}";
+            _database = ConnectionMultiplexer.Connect(connectionString).GetDatabase();
             _key = key;
         }
 
