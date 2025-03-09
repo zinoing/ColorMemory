@@ -68,9 +68,10 @@
               "RelativeDocumentMoniker": "ColorMemory\\Controllers\\HealthCheckController.cs",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Controllers\\HealthCheckController.cs",
               "RelativeToolTip": "ColorMemory\\Controllers\\HealthCheckController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:20:05.596Z"
+              "WhenOpened": "2025-03-09T09:20:05.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -103,7 +104,7 @@
               "RelativeDocumentMoniker": "ColorMemory\\Program.cs",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Program.cs",
               "RelativeToolTip": "ColorMemory\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T07:18:23.227Z",
               "EditorCaption": ""
@@ -152,7 +153,7 @@
               "RelativeDocumentMoniker": "ColorMemory\\appsettings.json",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\appsettings.json",
               "RelativeToolTip": "ColorMemory\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-14T15:12:49.484Z",
               "EditorCaption": ""
