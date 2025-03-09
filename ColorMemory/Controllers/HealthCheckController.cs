@@ -8,9 +8,9 @@ namespace ColorMemory.Controllers
     [ApiController]
     public class HealthCheckController : ControllerBase
     {
-        private readonly ILogger<ScoreController> _logger;
+        private readonly ILogger<HealthCheckController> _logger;
 
-        public HealthCheckController(ILogger<ScoreController> logger)
+        public HealthCheckController(ILogger<HealthCheckController> logger)
         {
             _logger = logger;
         }
