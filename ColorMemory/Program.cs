@@ -13,6 +13,11 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
+builder.Host.ConfigureHostOptions(options =>
+{
+    options.ShutdownTimeout = TimeSpan.FromSeconds(30);
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
