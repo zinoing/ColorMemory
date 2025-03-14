@@ -1,0 +1,96 @@
+[
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "GetNationalScore",
+    "RelativePath": "api/score/get_national/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "GetTopTenNationalScores",
+    "RelativePath": "api/score/get_national/top_ten",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "GetWeeklyScore",
+    "RelativePath": "api/score/get_weekly/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "GetTopTenWeeklyScores",
+    "RelativePath": "api/score/get_weekly/top_ten",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "SaveNationalScore",
+    "RelativePath": "api/score/update_national",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scoreInfo",
+        "Type": "ColorMemory.DTO.ScoreDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "SaveWeeklyScore",
+    "RelativePath": "api/score/update_weekly",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scoreInfo",
+        "Type": "ColorMemory.DTO.ScoreDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.HealthCheckController",
+    "Method": "GetHealth",
+    "RelativePath": "health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
