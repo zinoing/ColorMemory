@@ -1,7 +1,9 @@
 ﻿using ColorMemory.DTO;
-using ColorMemory.Repository;
+using ColorMemory.Repository.Implementations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ColorMemory.Controllers;
+using ColorMemory.Services;
 
 namespace ColorMemory.Controllers
 {
@@ -10,14 +12,12 @@ namespace ColorMemory.Controllers
     public class ScoreController : ControllerBase
     {
         private readonly ILogger<ScoreController> _logger;
-        private readonly WeeklyRankingDb _weeklyRankingDb;
-        private readonly NationalRankingDb _nationalRankingDb;
+        private readonly ScoreService _scoreService;
 
-        public ScoreController(ILogger<ScoreController> logger, WeeklyRankingDb weeklyRankingDb, NationalRankingDb nationalRankingDb)
+        public ScoreController(ILogger<ScoreController> logger, ScoreService scoreService)
         {
             _logger = logger;
-            _weeklyRankingDb = weeklyRankingDb;
-            _nationalRankingDb = nationalRankingDb;
+            _scoreService = scoreService;
         }
 
         [HttpPost("update_weekly")]
@@ -25,7 +25,7 @@ namespace ColorMemory.Controllers
         {
             try
             {
-                await _weeklyRankingDb.SaveScoreAsync(scoreInfo);
+                await _scoreService.SaveWeeklyScoreAsync(scoreInfo);
                 return Ok();
             }
             catch (Exception ex)
@@ -40,7 +40,7 @@ namespace ColorMemory.Controllers
         {
             try
             {
-                await _nationalRankingDb.SaveScoreAsync(scoreInfo);
+                await _scoreService.SaveNationalScoreAsync(scoreInfo);
                 return Ok();
             }
             catch (Exception ex)
@@ -50,17 +50,17 @@ namespace ColorMemory.Controllers
             }
         }
 
-        [HttpGet("get_weekly/{userId}")]
-        public async Task<IActionResult> GetWeeklyScore(string userId)
+        [HttpGet("get_weekly/{playerId}")]
+        public async Task<IActionResult> GetWeeklyScore(string playerId)
         {
-            var score = await _weeklyRankingDb.GetScoreAsyncById(userId);
+            var score = await _scoreService.GetWeeklyScoreAsync(playerId);
             return Ok(score);
         }
 
-        [HttpGet("get_national/{userId}")]
-        public async Task<IActionResult> GetNationalScore(string userId)
+        [HttpGet("get_national/{playerId}")]
+        public async Task<IActionResult> GetNationalScore(string playerId)
         {
-            var score = await _nationalRankingDb.GetScoreAsyncById(userId);
+            var score = await _scoreService.GetNationalScoreAsync(playerId);
             return Ok(score);
         }
 
@@ -71,14 +71,14 @@ namespace ColorMemory.Controllers
         [HttpGet("get_weekly/top_ten")]
         public async Task<IActionResult> GetTopTenWeeklyScores()
         {
-            var scores = await _weeklyRankingDb.GetTopTenRanksAsync();
+            var scores = await _scoreService.GetTopTenWeeklyScoresAsync();
             return Ok(scores);
         }
 
         [HttpGet("get_national/top_ten")]
         public async Task<IActionResult> GetTopTenNationalScores()
         {
-            var scores = await _weeklyRankingDb.GetTopTenRanksAsync();
+            var scores = await _scoreService.GetTopTenNationalScoresAsync();
             return Ok(scores);
         }
     }

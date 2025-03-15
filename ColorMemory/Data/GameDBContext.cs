@@ -1,12 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ColorMemory.Data
 {
     public class Player
     {
         [Key]
-        public int PlayerId { get; set; }
+        [Required]
+        public string PlayerId { get; set; }
         public int Score { get; set; }
 
         public ICollection<PlayerArtwork> PlayerArtworks { get; set; }
@@ -14,28 +16,35 @@ namespace ColorMemory.Data
 
     public class Artwork
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ArtworkId { get; set; }
+        [Required]
         public string Title { get; set; }
+        [Required]
         public string Artist { get; set; }
-        public string S3Url { get; set; }
 
+        [Required]
+        public string S3JsonUrl { get; set; }
+        [Required]
+        public string S3JpgUrl { get; set; }
+        [Required]
         public string FileName { get; set; }
-        public string ContentType { get; set; }
-
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 
     public class PlayerArtwork
     {
-        public int PlayerId { get; set; }
+        [Required]
+        public string PlayerId { get; set; }
+        [Required]
         public Player Player { get; set; }
 
         public int ArtworkId { get; set; }
+        [Required]
         public Artwork Artwork { get; set; }
 
         public bool HasIt { get; set; } = false;
     }
-
 
     public class GameDbContext : DbContext
     {
@@ -58,13 +67,42 @@ namespace ColorMemory.Data
             modelBuilder.Entity<PlayerArtwork>()
                 .HasOne(pa => pa.Player)
                 .WithMany(p => p.PlayerArtworks)
-                .HasForeignKey(pa => pa.PlayerId);
+                .HasForeignKey(pa => pa.PlayerId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<PlayerArtwork>()
                 .HasOne(pa => pa.Artwork)
                 .WithMany()
-                .HasForeignKey(pa => pa.ArtworkId);
-        }
+                .HasForeignKey(pa => pa.ArtworkId)
+                .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<Artwork>(entity =>
+            {
+                entity.HasKey(a => a.ArtworkId);
+
+                entity.Property(a => a.ArtworkId)
+                    .ValueGeneratedOnAdd();
+
+                entity.Property(a => a.Title)
+                    .IsRequired()
+                    .HasMaxLength(255);
+
+                entity.Property(a => a.Artist)
+                    .IsRequired()
+                    .HasMaxLength(255);
+
+                entity.Property(a => a.S3JsonUrl)
+                    .HasMaxLength(500)
+                    .IsRequired();
+
+                entity.Property(a => a.S3JpgUrl)
+                    .HasMaxLength(500)
+                    .IsRequired();
+
+                entity.Property(a => a.FileName)
+                    .HasMaxLength(255)
+                    .IsRequired();
+            });
+        }
     }
 }

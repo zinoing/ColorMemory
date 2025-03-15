@@ -1,6 +1,4 @@
-﻿using Amazon.S3;
-using Amazon.S3.Transfer;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ColorMemory.Data;
 
 namespace ColorMemory.Services
@@ -8,41 +6,44 @@ namespace ColorMemory.Services
     public class ArtworkService
     {
         private readonly GameDbContext _context;
-        private readonly IAmazonS3 _s3Client;
 
         private readonly string _s3BucketName;
 
-        public ArtworkService(GameDbContext context, IAmazonS3 s3Client, IConfiguration configuration)
+        public ArtworkService(GameDbContext context, IConfiguration configuration)
         {
             _context = context;
-            _s3Client = s3Client;
             _s3BucketName = configuration["AWS:S3BucketName"];
         }
 
-        public async Task<Artwork> AddArtworkAsync(string title, string artist, IFormFile file)
+        public async Task<Artwork> AddArtworkAsync(string fileName)
         {
-            string fileName = $"{Guid.NewGuid()}_{file.FileName}";
-            string fileUrl = $"https://{_s3BucketName}.s3.amazonaws.com/{fileName}";
-
-            using var memoryStream = new MemoryStream();
-            await file.CopyToAsync(memoryStream);
-            var uploadRequest = new TransferUtilityUploadRequest
+            if (fileName.EndsWith(".json"))
             {
-                InputStream = memoryStream,
-                Key = fileName,
-                BucketName = _s3BucketName,
-                ContentType = file.ContentType
-            };
-            var transferUtility = new TransferUtility(_s3Client);
-            await transferUtility.UploadAsync(uploadRequest);
+                fileName = fileName[..^5];
+            }
 
+            if (fileName.EndsWith(".jpg"))
+            {
+                fileName = fileName[..^4];
+            }
+
+            int byIndex = fileName.IndexOf(" by ");
+            if (byIndex == -1)
+            {
+                throw new ArgumentException("Invalid file name format. Expected format: '<Title> by <Artist>.json'");
+            }
+
+            string title = fileName[..byIndex].Trim();
+            string artist = fileName[(byIndex + 4)..].Trim();
+            string jsonFileUrl = $"https://{_s3BucketName}.s3.ap-northeast-2.amazonaws.com/json/{fileName}";
+            string jpgFileUrl = $"https://{_s3BucketName}.s3.ap-northeast-2.amazonaws.com/jpg/{fileName}";
             var artwork = new Artwork
             {
                 Title = title,
                 Artist = artist,
-                S3Url = fileUrl,
+                S3JsonUrl = jsonFileUrl,
+                S3JpgUrl = jpgFileUrl,
                 FileName = fileName,
-                ContentType = file.ContentType
             };
 
             _context.Artworks.Add(artwork);

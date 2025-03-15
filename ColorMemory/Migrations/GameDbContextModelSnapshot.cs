@@ -21,22 +21,7 @@ namespace ColorMemory.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("ArtworkPlayer", b =>
-                {
-                    b.Property<int>("ArtworksArtworkId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PlayersPlayerId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ArtworksArtworkId", "PlayersPlayerId");
-
-                    b.HasIndex("PlayersPlayerId");
-
-                    b.ToTable("PlayerArtCollections", (string)null);
-                });
-
-            modelBuilder.Entity("ColorMemory.DBContext.Artwork", b =>
+            modelBuilder.Entity("ColorMemory.Data.Artwork", b =>
                 {
                     b.Property<int>("ArtworkId")
                         .ValueGeneratedOnAdd()
@@ -46,24 +31,38 @@ namespace ColorMemory.Migrations
 
                     b.Property<string>("Artist")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("S3JpgUrl")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("S3JsonUrl")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("ArtworkId");
 
                     b.ToTable("Artworks");
                 });
 
-            modelBuilder.Entity("ColorMemory.DBContext.Player", b =>
+            modelBuilder.Entity("ColorMemory.Data.Player", b =>
                 {
-                    b.Property<int>("PlayerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("PlayerId"));
+                    b.Property<string>("PlayerId")
+                        .HasColumnType("varchar(255)");
 
                     b.Property<int>("Score")
                         .HasColumnType("int");
@@ -73,19 +72,46 @@ namespace ColorMemory.Migrations
                     b.ToTable("Players");
                 });
 
-            modelBuilder.Entity("ArtworkPlayer", b =>
+            modelBuilder.Entity("ColorMemory.Data.PlayerArtwork", b =>
                 {
-                    b.HasOne("ColorMemory.DBContext.Artwork", null)
+                    b.Property<string>("PlayerId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int>("ArtworkId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("HasIt")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("PlayerId", "ArtworkId");
+
+                    b.HasIndex("ArtworkId");
+
+                    b.ToTable("PlayerArtworks");
+                });
+
+            modelBuilder.Entity("ColorMemory.Data.PlayerArtwork", b =>
+                {
+                    b.HasOne("ColorMemory.Data.Artwork", "Artwork")
                         .WithMany()
-                        .HasForeignKey("ArtworksArtworkId")
+                        .HasForeignKey("ArtworkId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ColorMemory.DBContext.Player", null)
-                        .WithMany()
-                        .HasForeignKey("PlayersPlayerId")
+                    b.HasOne("ColorMemory.Data.Player", "Player")
+                        .WithMany("PlayerArtworks")
+                        .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Artwork");
+
+                    b.Navigation("Player");
+                });
+
+            modelBuilder.Entity("ColorMemory.Data.Player", b =>
+                {
+                    b.Navigation("PlayerArtworks");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,14 +1,78 @@
 [
   {
-    "ContainingType": "ColorMemory.Controllers.ScoreController",
-    "Method": "GetNationalScore",
-    "RelativePath": "api/score/get_national/{userId}",
+    "ContainingType": "ColorMemory.Controllers.ArtworkController",
+    "Method": "AddArtwork",
+    "RelativePath": "api/artwork/add_artwork/{fileName}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ArtworkController",
+    "Method": "AddPlayerArtwork",
+    "RelativePath": "api/artwork/add_player_artwork",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artworkInfo",
+        "Type": "ColorMemory.DTO.ArtworkDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ArtworkController",
+    "Method": "GetPlayerArtworks",
+    "RelativePath": "api/artwork/get_artworks/{playerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ArtworkController",
+    "Method": "GetPlayerUnownedArtworks",
+    "RelativePath": "api/artwork/get_unowned_artworks/{playerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColorMemory.Controllers.ScoreController",
+    "Method": "GetNationalScore",
+    "RelativePath": "api/score/get_national/{playerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerId",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -28,13 +92,13 @@
   {
     "ContainingType": "ColorMemory.Controllers.ScoreController",
     "Method": "GetWeeklyScore",
-    "RelativePath": "api/score/get_weekly/{userId}",
+    "RelativePath": "api/score/get_weekly/{playerId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "playerId",
         "Type": "System.String",
         "IsRequired": true
       }
