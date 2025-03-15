@@ -17,6 +17,12 @@ namespace ColorMemory.Data
         public int ArtworkId { get; set; }
         public string Title { get; set; }
         public string Artist { get; set; }
+        public string S3Url { get; set; }
+
+        public string FileName { get; set; }
+        public string ContentType { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 
     public class PlayerArtwork
