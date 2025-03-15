@@ -18,7 +18,7 @@ namespace ColorMemory.Controllers
         [HttpGet]
         public IActionResult GetHealth()
         {
-            _logger.LogInformation("Health check request received");
+            _logger.LogInformation("Health check endpoint was hit.");
             return StatusCode(200);
         }
     }

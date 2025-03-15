@@ -1,8 +1,11 @@
-using ColorMemory.DBContext;
-using ColorMemory.Repository;
+using ColorMemory.Data;
+using ColorMemory.Repository.Implementations;
+using ColorMemory.Services;
 using Microsoft.AspNetCore.Http.Timeouts;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Scalar.AspNetCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,11 +19,20 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<WeeklyRankingDb>();
 builder.Services.AddScoped<NationalRankingDb>();
 
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddScoped<ScoreService>();
+builder.Services.AddScoped<ArtworkService>();
+builder.Services.AddScoped<PlayerService>();
 
 builder.Services.AddDbContext<GameDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection")),
+        mySqlOptions => mySqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 5,
+            maxRetryDelay: TimeSpan.FromSeconds(10),
+            errorNumbersToAdd: null)
+    ));
+
 
 var app = builder.Build();
 
@@ -28,10 +40,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapScalarApiReference();
-    app.MapOpenApi();
+    // app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

@@ -7,7 +7,7 @@ namespace ColorMemory.DTO
         [Required]
         public int Score { get; set; }
 
-        public ScoreDTO(string userId, int score) : base(userId)
+        public ScoreDTO(string playerId, int score) : base(playerId)
         {
             Score = score;
         }

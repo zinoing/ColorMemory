@@ -5,11 +5,11 @@ namespace ColorMemory.DTO
     public class InGameDTO
     {
         [Required]
-        public string UserId { get; set; }
+        public string PlayerId { get; set; }
 
-        public InGameDTO(string userId)
+        public InGameDTO(string playerId)
         {
-            UserId = userId;
+            PlayerId = playerId;
         }
     }
 }
