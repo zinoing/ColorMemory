@@ -111,4 +111,3 @@ C:\Users\zino\Desktop\ColorMemory\ColorMemory\bin\Debug\net9.0\zh-Hant\Microsoft
 C:\Users\zino\Desktop\ColorMemory\ColorMemory\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
 C:\Users\zino\Desktop\ColorMemory\ColorMemory\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\zino\Desktop\ColorMemory\ColorMemory\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
-C:\Users\zino\Desktop\ColorMemory\ColorMemory\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
