@@ -27,7 +27,7 @@ namespace ColorMemory.Controllers
             var artwork = await _artworkService.AddArtworkAsync(fileName);
 
             if (artwork == null)
-                return NotFound("No artwork found to add.");
+                _logger.LogInformation($"{fileName} already exists");
 
             _logger.LogInformation($"added {fileName} to db");
             return Ok(artwork);

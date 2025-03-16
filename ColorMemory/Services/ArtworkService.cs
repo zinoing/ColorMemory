@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ColorMemory.Data;
+using ColorMemory.Controllers;
 
 namespace ColorMemory.Services
 {
