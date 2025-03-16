@@ -24,11 +24,15 @@ builder.Services.AddScoped<ArtworkService>();
 builder.Services.AddScoped<PlayerService>();
 
 builder.Services.AddDbContext<GameDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 21)),
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection")),
         mySqlOptions => mySqlOptions.EnableRetryOnFailure(
             maxRetryCount: 5,
             maxRetryDelay: TimeSpan.FromSeconds(10),
-            errorNumbersToAdd: null)));
+            errorNumbersToAdd: null)
+    ));
+
 
 var app = builder.Build();
 
