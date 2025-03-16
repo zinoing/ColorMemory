@@ -3,24 +3,27 @@
     "http": {
       "commandName": "Project",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_PASSWORD": "awsrdspassword!"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5186"
+      "applicationUrl": "http://localhost:5000"
     },
     "https": {
       "commandName": "Project",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_PASSWORD": "awsrdspassword!"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7293;http://localhost:5186"
+      "applicationUrl": "https://localhost:5001"
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_PASSWORD": "awsrdspassword!"
       }
     }
   },
@@ -29,7 +32,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:56512/",
+      "applicationUrl": "http://localhost:5000/",
       "sslPort": 44379
     }
   }
