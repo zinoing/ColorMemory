@@ -3,6 +3,7 @@ using ColorMemory.Repository.Implementations;
 using ColorMemory.Services;
 using Microsoft.AspNetCore.Http.Timeouts;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Scalar.AspNetCore;
 using System;
 
@@ -23,7 +24,11 @@ builder.Services.AddScoped<ArtworkService>();
 builder.Services.AddScoped<PlayerService>();
 
 builder.Services.AddDbContext<GameDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 29))));
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 21)),
+        mySqlOptions => mySqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 5,
+            maxRetryDelay: TimeSpan.FromSeconds(10),
+            errorNumbersToAdd: null)));
 
 var app = builder.Build();
 
