@@ -28,8 +28,9 @@ namespace ColorMemory.Controllers
 
             if (artwork == null)
                 _logger.LogInformation($"{fileName} already exists");
+            else 
+                _logger.LogInformation($"added {fileName} to db");
 
-            _logger.LogInformation($"added {fileName} to db");
             return Ok(artwork);
         }
 
