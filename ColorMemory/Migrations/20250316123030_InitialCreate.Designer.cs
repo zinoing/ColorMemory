@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ColorMemory.Migrations
 {
     [DbContext(typeof(GameDbContext))]
-    [Migration("20250316113253_InitialCreate")]
+    [Migration("20250316123030_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
