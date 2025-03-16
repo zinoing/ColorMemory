@@ -26,6 +26,7 @@ namespace ColorMemory.Controllers
             try
             {
                 await _scoreService.SaveWeeklyScoreAsync(scoreInfo);
+                _logger.LogInformation($"updated {scoreInfo.PlayerId}'s weekly score");
                 return Ok();
             }
             catch (Exception ex)
@@ -41,6 +42,7 @@ namespace ColorMemory.Controllers
             try
             {
                 await _scoreService.SaveNationalScoreAsync(scoreInfo);
+                _logger.LogInformation($"updated {scoreInfo.PlayerId}'s national score");
                 return Ok();
             }
             catch (Exception ex)

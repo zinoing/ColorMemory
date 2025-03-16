@@ -29,6 +29,7 @@ namespace ColorMemory.Controllers
             if (artwork == null)
                 return NotFound("No artwork found to add.");
 
+            _logger.LogInformation($"added {fileName} to db");
             return Ok(artwork);
         }
 
@@ -44,6 +45,7 @@ namespace ColorMemory.Controllers
                     Reason = "The artwork might already be owned by the player or does not exist."
                 });
 
+            _logger.LogInformation($"added {artworkInfo.Title} to {artworkInfo.PlayerId}");
             return Ok();
         }
 
