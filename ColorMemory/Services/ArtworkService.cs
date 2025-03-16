@@ -18,14 +18,6 @@ namespace ColorMemory.Services
 
         public async Task<Artwork> AddArtworkAsync(string fileName)
         {
-            /*var existingArtwork = await _context.Artworks
-                .FirstOrDefaultAsync(a => a.FileName == fileName);
-
-            if (existingArtwork != null)
-            {
-                return null;
-            }*/
-
             if (fileName.EndsWith(".json"))
             {
                 fileName = fileName[..^5];
@@ -34,6 +26,14 @@ namespace ColorMemory.Services
             if (fileName.EndsWith(".jpg"))
             {
                 fileName = fileName[..^4];
+            }
+
+            var existingArtwork = await _context.Artworks
+                .FirstOrDefaultAsync(a => a.FileName == fileName);
+
+            if (existingArtwork != null)
+            {
+                return null;
             }
 
             int byIndex = fileName.IndexOf(" by ");
