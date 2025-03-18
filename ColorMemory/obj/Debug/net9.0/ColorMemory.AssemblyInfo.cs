@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ColorMemory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+915afa46ad65c86a850f31a221707338ad6ef8cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d0702781855d4aea34798ce9a2a0be5782c27fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("ColorMemory")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ColorMemory")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
