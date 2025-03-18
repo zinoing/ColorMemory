@@ -7,7 +7,7 @@
         "DB_PASSWORD": "awsrdspassword!"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5000"
+      "applicationUrl": "http://*:5000"
     },
     "https": {
       "commandName": "Project",
@@ -16,7 +16,7 @@
         "DB_PASSWORD": "awsrdspassword!"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:5001"
+      "applicationUrl": "https://*:5001"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -32,7 +32,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:5000/",
+      "applicationUrl": "http://*:5000/",
       "sslPort": 44379
     }
   }
