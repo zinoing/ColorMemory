@@ -22,7 +22,6 @@ builder.Services.AddScoped<NationalRankingDb>();
 builder.Services.AddScoped<ScoreService>();
 builder.Services.AddScoped<ArtworkService>();
 builder.Services.AddScoped<PlayerService>();
-
 builder.Services.AddDbContext<GameDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
