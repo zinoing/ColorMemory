@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\zino\\Desktop\\ColorMemory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\services\\artworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\services\\artworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\services\\artworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\services\\artworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\colormemory.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -27,16 +27,16 @@
       "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\repository\\implementations\\baserankingdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\data\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\data\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\repository\\interfaces\\iredisdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\repository\\interfaces\\iredisdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|solutionrelative:colormemory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A9439B-D56F-45DF-B3F4-298378E357AC}|ColorMemory\\ColorMemory.csproj|c:\\users\\zino\\desktop\\colormemory\\colormemory\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -143,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Program.cs",
               "RelativeDocumentMoniker": "ColorMemory\\Program.cs",
@@ -180,32 +180,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\appsettings.json",
               "RelativeDocumentMoniker": "ColorMemory\\appsettings.json",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\appsettings.json",
               "RelativeToolTip": "ColorMemory\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-15T15:41:04.925Z"
+              "WhenOpened": "2025-03-15T15:41:04.925Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ScoreService.cs",
               "DocumentMoniker": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Services\\ScoreService.cs",
               "RelativeDocumentMoniker": "ColorMemory\\Services\\ScoreService.cs",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Services\\ScoreService.cs",
               "RelativeToolTip": "ColorMemory\\Services\\ScoreService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T15:41:03.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IRedisDb.cs",
               "DocumentMoniker": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Repository\\Interfaces\\IRedisDb.cs",
               "RelativeDocumentMoniker": "ColorMemory\\Repository\\Interfaces\\IRedisDb.cs",
@@ -247,7 +248,7 @@
               "RelativeDocumentMoniker": "ColorMemory\\Repository\\Implementations\\BaseRankingDb.cs",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Repository\\Implementations\\BaseRankingDb.cs",
               "RelativeToolTip": "ColorMemory\\Repository\\Implementations\\BaseRankingDb.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBAAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T15:40:50.329Z",
               "EditorCaption": ""
@@ -279,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GameDBContext.cs",
               "DocumentMoniker": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Data\\GameDBContext.cs",
               "RelativeDocumentMoniker": "ColorMemory\\Data\\GameDBContext.cs",
@@ -315,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ArtworkService.cs",
               "DocumentMoniker": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Services\\ArtworkService.cs",
               "RelativeDocumentMoniker": "ColorMemory\\Services\\ArtworkService.cs",
