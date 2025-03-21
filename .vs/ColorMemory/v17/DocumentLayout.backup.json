@@ -99,15 +99,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ColorMemory",
+              "Title": "ColorMemory.csproj",
               "DocumentMoniker": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\ColorMemory.csproj",
               "RelativeDocumentMoniker": "ColorMemory\\ColorMemory.csproj",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\ColorMemory.csproj",
               "RelativeToolTip": "ColorMemory\\ColorMemory.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-21T14:53:39.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:53:39.378Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "ColorMemory\\Migrations\\GameDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:46:01.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:46:01.149Z"
             },
             {
               "$type": "Document",
@@ -144,8 +142,7 @@
               "RelativeToolTip": "ColorMemory\\Migrations\\20250316123030_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T10:14:06.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T10:14:06.308Z"
             },
             {
               "$type": "Document",
@@ -167,7 +164,7 @@
               "RelativeDocumentMoniker": "ColorMemory\\Program.cs",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\Program.cs",
               "RelativeToolTip": "ColorMemory\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T11:48:52.731Z",
               "EditorCaption": ""
@@ -194,8 +191,7 @@
               "RelativeToolTip": "ColorMemory\\Controllers\\HealthCheckController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T06:56:08.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T06:56:08.794Z"
             },
             {
               "$type": "Document",
@@ -219,8 +215,7 @@
               "RelativeToolTip": "ColorMemory\\Services\\ScoreService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:41:03.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T15:41:03.693Z"
             },
             {
               "$type": "Document",
@@ -280,8 +275,7 @@
               "RelativeToolTip": "ColorMemory\\Services\\PlayerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:30:30.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T15:30:30.739Z"
             },
             {
               "$type": "Document",
@@ -341,8 +335,7 @@
               "RelativeToolTip": "ColorMemory\\Services\\ArtworkService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T07:16:09.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T07:16:09.468Z"
             },
             {
               "$type": "Document",
@@ -354,8 +347,7 @@
               "RelativeToolTip": "ColorMemory\\Controllers\\ArtworkController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T07:13:37.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T07:13:37.424Z"
             }
           ]
         }

@@ -33,7 +33,6 @@ builder.Services.AddDbContext<GameDbContext>(options =>
     ));
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-Console.WriteLine($"[DEBUG] 현재 사용 중인 Connection String: {connectionString}");
 
 var app = builder.Build();
 
