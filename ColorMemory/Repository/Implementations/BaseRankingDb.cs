@@ -14,7 +14,7 @@ namespace ColorMemory.Repository.Implementations
             _logger = logger;
             var redisHost = configuration["Redis:Host"];
             var redisPort = configuration["Redis:Port"];
-            var connectionString = $"{redisHost}:{redisPort},abortConnect=false";
+            var connectionString = $"{redisHost}:{redisPort}";
             _database = ConnectionMultiplexer.Connect(connectionString).GetDatabase();
             _key = key;
         }
