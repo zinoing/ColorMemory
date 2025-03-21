@@ -98,8 +98,7 @@
               "RelativeToolTip": "ColorMemory\\ColorMemory.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-17T15:12:37.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T15:12:37.436Z"
             },
             {
               "$type": "Document",
@@ -111,8 +110,7 @@
               "RelativeToolTip": "ColorMemory\\Migrations\\20250316123030_InitialCreate.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T10:14:06.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T10:14:06.308Z"
             },
             {
               "$type": "Document",
@@ -136,8 +134,7 @@
               "RelativeToolTip": "ColorMemory\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T11:48:52.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T11:48:52.731Z"
             },
             {
               "$type": "Document",
@@ -171,7 +168,7 @@
               "RelativeDocumentMoniker": "ColorMemory\\appsettings.json",
               "ToolTip": "C:\\Users\\zino\\Desktop\\ColorMemory\\ColorMemory\\appsettings.json",
               "RelativeToolTip": "ColorMemory\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-15T15:41:04.925Z",
               "EditorCaption": ""
@@ -186,8 +183,7 @@
               "RelativeToolTip": "ColorMemory\\Services\\ScoreService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvygAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:41:03.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T15:41:03.693Z"
             },
             {
               "$type": "Document",
@@ -235,8 +231,7 @@
               "RelativeToolTip": "ColorMemory\\Repository\\Implementations\\BaseRankingDb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:40:50.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T15:40:50.329Z"
             },
             {
               "$type": "Document",
@@ -248,8 +243,7 @@
               "RelativeToolTip": "ColorMemory\\Services\\PlayerService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:30:30.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T15:30:30.739Z"
             },
             {
               "$type": "Document",
@@ -261,8 +255,7 @@
               "RelativeToolTip": "ColorMemory\\Controllers\\ScoreController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:28:23.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T15:28:23.55Z"
             },
             {
               "$type": "Document",
@@ -322,8 +315,7 @@
               "RelativeToolTip": "ColorMemory\\Controllers\\ArtworkController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T07:13:37.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T07:13:37.424Z"
             }
           ]
         }
