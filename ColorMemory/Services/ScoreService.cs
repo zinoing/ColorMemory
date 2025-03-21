@@ -18,7 +18,7 @@ namespace ColorMemory.Services
 
         public async Task SaveWeeklyScoreAsync(ScoreDTO scoreInfo)
         {
-            //await _weeklyRankingDb.SaveScoreAsync(scoreInfo);
+            await _weeklyRankingDb.SaveScoreAsync(scoreInfo);
             await _playerService.SetHighScore(scoreInfo.PlayerId, scoreInfo.Score);
         }
 
