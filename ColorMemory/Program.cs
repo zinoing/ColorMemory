@@ -31,8 +31,9 @@ builder.Services.AddDbContext<GameDbContext>(options =>
             maxRetryDelay: TimeSpan.FromSeconds(10),
             errorNumbersToAdd: null)
     ));
-Console.WriteLine($"[DEBUG] 현재 사용 중인 Connection String: {builder.Configuration.GetConnectionString("DefaultConnection")}");
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+Console.WriteLine($"[DEBUG] 현재 사용 중인 Connection String: {connectionString}");
 
 var app = builder.Build();
 
